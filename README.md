@@ -106,7 +106,7 @@ config SPI_WK2XXX_DEBUG
 	  This enables detailed driver debug output.
 ```
 
-### Shot log output
+### Short log output
 ```
 [ 1816.708554]  [0:       modprobe:31698] wk2xxxspi spi1.0: SPI driver for SPI to UART chip WK2XXX
 [ 1816.708613]  [0:       modprobe:31698] wk2xxxspi spi1.0: V2.5 on 2024.02.15
