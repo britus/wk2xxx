@@ -1,7 +1,7 @@
-# wk2xxx
+## wk2xxx
 This repository contains the WK2XXX (WK2124, WK2168, WK2212) / SPI to UART switch Linux kernel driver
 
-## Device tree nodes (example Firyfly AIO-RK3568J IPC industrial tablet)
+### Device tree nodes (example Firefly AIO-RK3568J IPC industrial tablet)
 ```
 / {
 	spi1: spi@fe620000 {
@@ -46,7 +46,7 @@ This repository contains the WK2XXX (WK2124, WK2168, WK2212) / SPI to UART switc
 
 ```
 
-## Kconfig snippet
+### Kconfig snippet
 ```
 config SPI_WK2XXX
 	tristate "wk2xxx SPI to UART switch"
@@ -99,7 +99,7 @@ config SPI_WK2XXX_DEBUG
 	  This enables detailed driver debug output.
 ```
 
-## Full debug output loading module
+### Full debug output loading module
 ```
 Feb 15 13:16:26 firefly kernel: wk2xxxspi spi1.0: SPI driver for SPI to UART chip WK2XXX
 Feb 15 13:16:26 firefly kernel: wk2xxxspi spi1.0: V2.5 on 2024.02.15
@@ -143,7 +143,7 @@ Feb 15 13:16:26 firefly kernel: wk2xxxspi spi1.0: wk2xxx_probe: uart port=4 regi
 Feb 15 13:16:26 firefly kernel: wk2xxxspi spi1.0: Driver successfully installed.
 ```
 
-## Open device with minicom -D /dev/ttysWK3
+### Open device with minicom -D /dev/ttysWK3
 ```
 Feb 15 13:17:38 firefly kernel: wk2xxxspi spi1.0: wk2xxx_startup: port1=1 port2=2 port3=3 port4=4
 Feb 15 13:17:38 firefly kernel: wk2xxxspi spi1.0: wk2xxx_startup: line1=0 line2=1 line3=2 line4=3
@@ -184,7 +184,7 @@ Feb 15 13:17:38 firefly kernel: wk2xxxspi spi1.0: wk2xxx_get_mctrl: called.
 Feb 15 13:17:38 firefly kernel: wk2xxxspi spi1.0: wk2xxx_get_mctrl: called.
 ```
 
-## Type some keys on the keyboard
+### Type some keys on the keyboard
 ```
 Feb 15 13:18:52 firefly kernel: wk2xxxspi spi1.0: wk2xxx_get_mctrl: called.
 Feb 15 13:18:53 firefly kernel: wk2xxxspi spi1.0: wk2xxx_get_mctrl: called.
@@ -277,7 +277,7 @@ Feb 15 13:18:54 firefly kernel: wk2xxxspi spi1.0: wk2xxx_ist: enter
 Feb 15 13:18:54 firefly kernel: wk2xxxspi spi1.0: wk2xxx_ist: exit
 ```
 
-## Closing minicom
+### Closing minicom
 ```
 Feb 15 13:19:49 firefly kernel: wk2xxxspi spi1.0: wk2xxx_get_mctrl: called.
 Feb 15 13:19:49 firefly kernel: wk2xxxspi spi1.0: wk2xxx_termios: enter port=4
