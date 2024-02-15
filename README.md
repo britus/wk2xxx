@@ -46,6 +46,13 @@ This repository contains the WK2XXX (WK2124, WK2168, WK2212) / SPI to UART switc
 
 ```
 
+### Makefile snippet
+```
+/* SPI to UART switch */
+obj-$(CONFIG_SPI_WK2XXX) += spi-wk2xxx.o
+ccflags-$(CONFIG_SPI_WK2XXX_DEBUG) += -DDEBUG
+```
+
 ### Kconfig snippet
 ```
 config SPI_WK2XXX
