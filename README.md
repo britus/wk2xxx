@@ -106,6 +106,17 @@ config SPI_WK2XXX_DEBUG
 	  This enables detailed driver debug output.
 ```
 
+### Shot log output
+```
+[ 1816.708554]  [0:       modprobe:31698] wk2xxxspi spi1.0: SPI driver for SPI to UART chip WK2XXX
+[ 1816.708613]  [0:       modprobe:31698] wk2xxxspi spi1.0: V2.5 on 2024.02.15
+[ 1816.795152]  [2:       modprobe:31698] spi1.0: ttysWK0 at I/O 0x1 (irq = 0, base_baud = 691200) is a wk2xxx
+[ 1816.795642]  [2:       modprobe:31698] spi1.0: ttysWK1 at I/O 0x2 (irq = 0, base_baud = 691200) is a wk2xxx
+[ 1816.795943]  [2:       modprobe:31698] spi1.0: ttysWK2 at I/O 0x3 (irq = 0, base_baud = 691200) is a wk2xxx
+[ 1816.796209]  [2:       modprobe:31698] spi1.0: ttysWK3 at I/O 0x4 (irq = 0, base_baud = 691200) is a wk2xxx
+[ 1816.796569]  [2:       modprobe:31698] wk2xxxspi spi1.0: Driver successfully installed.
+```
+
 ### Full debug output loading module
 ```
 Feb 15 13:16:26 firefly kernel: wk2xxxspi spi1.0: SPI driver for SPI to UART chip WK2XXX
