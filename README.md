@@ -1,11 +1,12 @@
 ## wk2xxx
-This repository contains the WK2XXX (WK2124, WK2168, WK2212) / SPI to UART switch Linux kernel driver
+This repository contains the Linux kernel driver WK2XXX (WK2124, WK2168, WK2212)
+SPI to RS232,RS485 switch.
 
 ### Device tree nodes (example Firefly AIO-RK3568J IPC industrial tablet)
 ```
 / {
 	spi1: spi@fe620000 {
-		compatible = "rockchip,rk3066-spi";
+		compatible = "rockchip,rk3568-spi";
 		reg = <0x0 0xfe620000 0x0 0x1000>;
 		interrupts = <GIC_SPI 104 IRQ_TYPE_LEVEL_HIGH>;
 		#address-cells = <1>;
